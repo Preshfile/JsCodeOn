@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/Assets/Js/script1.js"></script>
+    <style></style>
+  </head>
+  <body>
+    <button onclick="alert('clicked')">Clicked</button>
+
+    <div class="boxed"></div>
+    <div id="box"></div>
+    <script>
+      //its important to put your javascript after your html, so the page would load faster.
+      var num1 = 30;
+      var num2 = 10;
+      var num3 = num1 * num2;
+
+      document.write(num3);
+
+      /* Outputting content in JS
+        -  Console
+        -  Write
+        -  Alert
+        -  Element
+      */
+
+      //Getting getting and manipulating HTML elements
+
+      var firstInjection = document.getElementsByClassName("boxed");
+      /*
+        The getElementsByClassName method returns a collection of elements, not a single element. 
+        Therefore, you need to access a specific element within the collection, 
+        or if you are sure there's only one element with that class, 
+        you can use querySelector instead.
+      */
+     
+     //with querySelector
+     var firstInjection = document.querySelector(".boxed");
+      var secondInjection = document.getElementById("box");
+
+      firstInjection.innerHTML = "<h1>Hello from Script1!</h1>";
+      secondInjection.innerHTML = "<h1 style='background-color:red;'>Hello from Script!</h1>";
+      /*Take away
+            method - belongs to a class - has both opening and closing bracket
+            function stands alone - has both opening and closing bracket
+            properties -  Does not have open and close bracket
+        */
+
+        //XXXX - Data Types -  How JavaScript sees values.
+        // string is a textual data
+        //String 
+        var text = 'this is a string'
+        var text_ = "this is a string"
+        var textGh = "Let's play"
+        var textng = 'Let\'s play'
+        console.log(textGh)
+
+        // number 
+        var n = 26.6;
+
+        //boolean
+        var isFemale = true;
+        var isMale = false;
+
+        // alert(1>5)
+        // undefined
+        var c;
+        alert(c)
+
+    </script>
+  </body>
+</html>
