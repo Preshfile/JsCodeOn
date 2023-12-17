@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        th, td{
+            border: 1px solid gray;
+        }
+        th, td{
+            padding: 20px;
+        }
+        .table_1{
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+    <table class="table_1">
+        <!-- can use cellspacing in the html table tag. i.e cellspacing="20px" -->
+        <!-- Table caption -->
+        <caption>Mass Communication Department</caption>
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Name</th>
+                <th colspan="2">Reg.No.</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Angel</td>
+                <td>2021/1123</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Grace</td>
+                <td>2022/1021</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ally</td>
+                <td>2019/0011</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Uju</td>
+                <td>2020/0011</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+    <!-- colspan and rowspan -->
+    <table class="table_2">
+            <tr>
+                <th>S/N</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Name</th>
+                <td>Angel</td>
+                <td>Grace</td>
+                <td>Ally</td>
+                <td>Uju</td>
+            </tr>
+            <tr>
+                <th>Reg.No.</th>
+                <td>2021/1021</td>
+                <td>2022/1381</td>
+                <td>20219/1021</td>
+                <td>2020/1381</td>
+            </tr>
+            <tr>
+                <th>Year</th>
+                <td>2</td>
+                <td>1</td>
+                <td>4</td>
+                <td>3</td>
+            </tr>
+    </table>
+</body>
+</html>
